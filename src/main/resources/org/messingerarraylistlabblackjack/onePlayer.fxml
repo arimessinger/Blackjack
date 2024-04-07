@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7A306C;" stylesheets="@onePlayer.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.messingerarraylistlabblackjack.onePlayerController">
+   <children>
+      <Button fx:id="dealButton" layoutX="219.0" layoutY="237.0" mnemonicParsing="false" onAction="#initialDeal" prefHeight="63.0" prefWidth="162.0" style="-fx-text-fill: #000000; -fx-font-size: 30;" text="Deal" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font></Button>
+      <Pane layoutX="14.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="playerCard1View" fitHeight="104.0" fitWidth="66.0" layoutX="14.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playerCard2View" fitHeight="104.0" fitWidth="66.0" layoutX="34.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playerCard3View" fitHeight="104.0" fitWidth="66.0" layoutX="54.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playerCard4View" fitHeight="104.0" fitWidth="66.0" layoutX="74.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playerCard5View" fitHeight="104.0" fitWidth="66.0" layoutX="94.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="playerLabel" layoutX="22.0" layoutY="64.0" prefHeight="14.0" prefWidth="162.0" style="-fx-text-fill: #f2e9b8;" text="Player:" />
+         </children>
+      </Pane>
+      <Pane layoutX="400.0" layoutY="-48.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="dealerCard1View" fitHeight="104.0" fitWidth="66.0" layoutX="14.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dealerCard2View" fitHeight="104.0" fitWidth="66.0" layoutX="34.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dealerCard3View" fitHeight="104.0" fitWidth="66.0" layoutX="54.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dealerCard4View" fitHeight="104.0" fitWidth="66.0" layoutX="74.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dealerCard5View" fitHeight="104.0" fitWidth="66.0" layoutX="94.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@textures/Cards/c1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="dealerLabel" layoutX="22.0" layoutY="66.0" style="-fx-text-fill: #f2e9b8;" text="Dealer:" />
+         </children>
+      </Pane>
+      <Button fx:id="hitButton" layoutX="219.0" layoutY="317.0" mnemonicParsing="false" onAction="#hit" prefHeight="63.0" prefWidth="162.0" style="-fx-text-fill: #000000; -fx-font-size: 30;" text="Hit" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="stayButton" layoutX="400.0" layoutY="317.0" mnemonicParsing="false" onAction="#stay" prefHeight="63.0" prefWidth="162.0" style="-fx-text-fill: #000000; -fx-font-size: 30;" text="Stay" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="playerBustLabel" layoutX="164.0" layoutY="89.0" style="-fx-text-fill: #c91e12;" text="BUST">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerBlackjackLabel" layoutX="102.0" layoutY="124.0" style="-fx-text-fill: #000000;" text="BLACKJACK">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="winner" layoutX="30.0" layoutY="169.0" style="-fx-text-fill: #f2e9b8;" text="AAAAAAAAAAAA" textAlignment="CENTER">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

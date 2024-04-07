@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.label {
+-fx-font-family: "Press Start 2P", system-ui;
+}
+
+.button {
+-fx-font-family: "Press Start 2P", system-ui;
+}
+
+#playButton {
+-fx-background-color: #f2e9b8;
+}
+
+#exitButton {
+-fx-background-color: #000000;
+}
+
+.slider .track {
+-fx-background-radius: 0;
+-fx-background-color: #000000;
+}
+
+.slider .thumb {
+-fx-background-radius: 0;
+-fx-background-color: #f2e9b8;
+
+}
